@@ -79,7 +79,7 @@ src_install() {
 		
 	exeinto ${FREETUBE_HOME}
         exeopts -m0755
-		doexe opt/${_PN}/${PN}
+		doexe opt/${_PN}/freetube
 
 	dosym ${FREETUBE_HOME}/${PN} /usr/bin/${PN} || die
 	
