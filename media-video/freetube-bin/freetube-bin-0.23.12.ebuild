@@ -81,16 +81,16 @@ src_install() {
         exeopts -m0755
 		doexe opt/${_PN}/freetube
 
-	dosym ${FREETUBE_HOME}/${PN} /usr/bin/${PN} || die
+	dosym ${FREETUBE_HOME}/freetube /usr/bin/${PN} || die
 	
 	insinto /usr/share/doc/${P}
-	gunzip usr/share/doc/${PN}/changelog.gz
-	doins usr/share/doc/${PN}/changelog
+	gunzip usr/share/doc/freetube/changelog.gz
+	doins usr/share/doc/freetube/changelog
 
     insinto /usr/share/icons/hicolor/scalable/apps
-    doins usr/share/icons/hicolor/scalable/apps/${PN}.svg
+    doins usr/share/icons/hicolor/scalable/apps/freetube.svg
 
-    domenu "usr/share/applications/${PN}.desktop"
+    domenu "usr/share/applications/freetube.desktop"
 }
 
 pkg_postinst() {
