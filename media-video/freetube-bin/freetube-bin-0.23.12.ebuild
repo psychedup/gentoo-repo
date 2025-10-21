@@ -26,7 +26,7 @@ BDEPEND="!!media-sound/freetube"
 QA_PREBUILT="opt/${_PN}/swiftshader/libEGL.so
     opt/${_PN}/swiftshader/libGLESv2.so
     opt/${_PN}/chrome-sandbox
-    opt/${_PN}/${PN}
+    opt/${_PN}/freetube
     opt/${_PN}/libEGL.so
     opt/${_PN}/libGLESv2.so
     opt/${_PN}/libffmpeg.so
